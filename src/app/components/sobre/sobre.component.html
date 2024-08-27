@@ -1,0 +1,8 @@
+<div class="sobre-gallery">
+    <div *ngFor="let sobre of sobres" class="sobre-card">
+        <img [src]="sobre.photoUrl" [alt]="sobre.name" class="sobre-photo" />
+        <h1>{{ sobre.name }}</h1>
+        <h3>{{ sobre.cargo }}</h3>
+        <a [href]="sobre.like" ><img src="/assets/LinkedIn.svg" alt="" class="like"></a>
+      </div>
+</div>

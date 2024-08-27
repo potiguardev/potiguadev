@@ -1,0 +1,132 @@
+.sobre {
+    display: flex;
+    background-color: #222020;
+    color: white;
+    height: 90%;
+}
+
+.sobre-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    gap: 20px;
+}
+
+.sobre-cta h1 {
+    font-weight: 600;
+    font-size: 4.4rem;
+}
+
+.sobre-cta p {
+    width: 40vw;
+    font-size: 2rem;
+}
+
+.img-sobre {
+    background-image: url(/assets/home.png);
+    width: 50vw;
+    height: 90vh;
+}
+
+.img-serviços {
+    background-image: url(/assets/seviços.png);
+    width: 50vw;
+}
+
+#serviços {
+    height: 100%;
+    
+}
+#serviços h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+#serviços p{
+    font-size: 1.4rem;
+    width: 35vw;
+    font-weight: 300;
+}
+#serviços h1{
+    padding-top: 100px;
+    color: #F12001;
+    font-size: 3rem;
+    
+}
+
+#pessoal {
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color:#000000 ;
+    color: #16F08F;
+    width: 100%;
+    height: 100%;
+}
+#pessoal h1 {
+    font-size: 3rem;
+    padding-bottom: 50px;
+}
+
+#contato {
+    background-color: #222020;
+    color: #F12001;
+    display: flex;
+    flex-direction: column;
+}
+#contato h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 1124px) {
+    #sobre p {
+        font-size: clamp(1.5rem, 0.5vw, 1rem);
+    }
+    #sobre h1 {
+        font-size: 3rem;
+        
+    }
+    .img-sobre {
+        display: none;
+    }
+    #sobre {
+        background-image: url(/assets/home.png);
+        width: 100vw;     
+    }
+    .sobre-cta h1 {
+        font-size: 4.4rem;
+    }
+    
+    .sobre-cta p {
+        width: 80vw;
+        font-size: 1.9rem;
+    }
+    .img-serviços {
+        display: none;
+    }
+  
+    #sobre-cta {
+        width: 100vw;
+        background-image: url(/assets/seviços-black.png);
+
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    #serviços p{
+        width: 90vw;
+        font-size: 1rem;
+    }
+    app-btn {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,25 @@
+.btn-padrão {
+    color: #16F08F;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 10px;
+    border-width: 1px;
+    border-style: solid;
+    text-decoration: none;
+    display: inline-block;
+    font-size: clamp(1.5rem, 0.5vw, 1rem);
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.btn-padrão:hover {
+    transform: scale(1.2); /* Cresce o botão em 10% */
+    background-color: #8af016;
+    color: rgb(3, 104, 3);
+}
+.btn-padrão :disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}

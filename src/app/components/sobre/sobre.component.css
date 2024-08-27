@@ -1,0 +1,41 @@
+.sobre-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    color: #16F08F;
+  }
+  
+  .sobre-card {
+    text-align: center;
+    
+   
+  }
+  .like{
+    margin-bottom: -35px;
+    transition: transform 0.5s ease-in-out; /* Adiciona a transição suave */
+    
+  }
+  .like:hover {
+    transform: scale(1.3); /* Cresce o botão em 10% */
+    background-color: #16F08F;
+  }
+
+  .like:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  .sobre-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #16F08F; /* Altere a cor da borda conforme necessário */
+  }
+  
+  @media (max-width: 600px) {
+    .employee-photo {
+     
+    }
+  }

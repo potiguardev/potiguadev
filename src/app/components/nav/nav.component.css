@@ -1,0 +1,91 @@
+/* Estilo básico do navbar */
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00EEFD;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #fd0000;
+}
+
+/* Estilo do ícone de menu (hambúrguer) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fcfcfc;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.logopotigua {
+  width: 20vw;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 50vh;
+    top: 50px;
+    background-color: #000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+    gap: 50px;
+    transform: translateX(0%);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .logopotigua {
+    width: 40vw;
+  }
+}
